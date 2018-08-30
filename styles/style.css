@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+#app-wrapper {
+    font-size: 18px;
+    width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-bottom: 2px;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ffc107;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2em;
+}
+
+.panel-block {
+    border-bottom: 1px solid #ddd;
+}
+
+.bm-link {
+    width: 100%;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.bm-link:hover {
+    color: #000;
+}
+
+.bm-edit {
+    margin-right: 5px;
+}
+
+.button svg {
+    margin-right: 4px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.panel-block:first-child {
+    border-top: 0;
+}
+
+.form-head {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bm-add {
+    width: 100%;
+}
+
+.edit-field {
+    padding: 20px 15px;
+    display: flex;
+    border: 1px solid #ddd;
+
+    border-top: 0;
+}
+
+.edit-field input {
+    margin-right: 5px;
+}
