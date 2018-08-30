@@ -1,25 +1,5 @@
 Vue.component('bm-list',{
-    data: function () {
-        return { 
-            bookmarks: [
-                {
-                    title: 'Google',
-                    link: 'http://google.com',
-                    isEdit: false
-                },
-                {
-                    title: 'Yahoo',
-                    link: 'http://yahoo.com',
-                    isEdit: false
-                },
-                {
-                    title: 'Facebook',
-                    link: 'http://facebook.com',
-                    isEdit: false
-                }
-            ]
-        }
-    },
+    props:['bookmarks'],
 
     template:
     
@@ -29,10 +9,7 @@ Vue.component('bm-list',{
     // Not supportd in IE
 
     `<div>
-        
-        <bm-item v-bind:bookmark="bookmark" v-for="(bookmark, index) in bookmarks">
-            
-        </bm-item>
+        <bm-item v-bind:bookmark="bookmark" v-for="(bookmark, index) in bookmarks"></bm-item>
     </div>
     `
 });

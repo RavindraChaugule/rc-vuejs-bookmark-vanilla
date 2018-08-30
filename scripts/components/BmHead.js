@@ -1,5 +1,9 @@
 Vue.component('bm-head', {
-    props:['bookmarks'],
+    
+    // Receive data from parent
+    // 'bookmarks' is a property name.
+    // 'bookmarks' here in this props array is a data reciever by property name.
+    props:['bookmarks'], 
     data: function(){
         return{
             newTitle: '',
